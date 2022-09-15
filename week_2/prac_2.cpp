@@ -27,7 +27,7 @@ int main(){
             cout << "ERROR : Operator disabled. End a loop." << endl; // 에러메세지 출력
             break; // 반복 종료
         }
-        cout << a << ' ' <<  opt << ' ' <<  b << " = " << result << endl; // 'a + b = c' 형식으로 결과 출력
+        cout << a << ' ' <<  opt << ' ' <<  b << " = " << result << endl; // 'a ? b = c' 형식으로 결과 출력
         i++; // 반복 1회 당 i를 +1
     }
 }
