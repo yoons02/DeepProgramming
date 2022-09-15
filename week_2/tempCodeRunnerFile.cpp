@@ -1,0 +1,1 @@
+cout << text << endl;
