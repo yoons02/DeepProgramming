@@ -5,7 +5,7 @@ int main(){
     int i = 0, a, b, result; // 변수 선언
     char opt; // 연산자를 저장할 char형 변수 선언
 
-    while (i < 8){ // n회 반복
+    while (i < 6){ // n회 반복
         cin >> a >> opt >> b; // 숫자 a, 연산자 opt, 숫자 b를 순서대로 입력. 구분은 spacebar
 
         if (opt == '+'){ // 연산자가 '+'라면
