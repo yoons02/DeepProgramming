@@ -2,7 +2,7 @@
 using namespace std;
 
 class Rectangle{
-public:
+public: // 왜 private로 하면 안돼??
     int width;
     int height;
     double getArea();
