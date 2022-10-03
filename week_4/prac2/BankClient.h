@@ -6,7 +6,7 @@ using namespace std;
 class BankClient { // BankClient 클래스 생성
 public: // 접근 지정자
     string client; // 예금주 입력 값 저장 변수
-    string account; // 계좌변호 입력 값 저장 변수
+    string account; // 계좌변호 입력 값 저장  변수
     int work; // 업무 선택번호 저장 변수
     int remain; // 잔액 저장 변수
 

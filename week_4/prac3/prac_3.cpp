@@ -3,6 +3,29 @@
 #include "Student.h" // 사용자 정의 헤더파일 전처리
 using namespace std;
 
+void Student::Name(int n){ // 이름을 저장하는 Name 함수
+        cout << "이름 : ";
+        cin >> name[n]; // n번째 배열에 저장
+    }
+
+void Student::Number(int n){ // 학번을 저장하는 Number 함수
+    cout << "학번 : ";
+    cin >> number[n]; // n번째 배열에 저장
+}
+
+void Student::Score(int n){ // 전체 점수를 저장하는 Score 함수
+    cout << "전체 점수(0-200) : ";
+    cin >> score[n]; // n번째 배열에 저장
+    c_score[n] = (score[n]/200)*100; // 100점 만점으로 환산점수 계산 후 n번째 배열에 저장
+}
+
+void Student::All(int a){ // 전체 정보를 출력하는 All 함수, a는 총 저장된 개수
+    cout << "이름 : " <<  name[a] << endl; // 이름 출력
+    cout << "학번 : " << number[a] << endl; // 학번 출력
+    cout << "전체 점수 : " << score[a] << endl; // 전체 점수 출력
+    cout << "환산 점수 : " << c_score[a] << endl; // 환산 점수 출력
+}
+
 int main(){
     Student db; // 객체 생성
     int work; // 업무 번호 저장 변수
