@@ -16,14 +16,16 @@ void Student::Number(int n){ // 학번을 저장하는 Number 함수
 void Student::Score(int n){ // 전체 점수를 저장하는 Score 함수
     cout << "전체 점수(0-200) : ";
     cin >> score[n]; // n번째 배열에 저장
-    c_score[n] = (score[n]/200)*100; // 100점 만점으로 환산점수 계산 후 n번째 배열에 저장
+    c_score[n] = ((double)score[n]/200)*100;
+    cout << endl;
 }
 
 void Student::All(int a){ // 전체 정보를 출력하는 All 함수, a는 총 저장된 개수
     cout << "이름 : " <<  name[a] << endl; // 이름 출력
     cout << "학번 : " << number[a] << endl; // 학번 출력
     cout << "전체 점수 : " << score[a] << endl; // 전체 점수 출력
-    cout << "환산 점수 : " << c_score[a] << endl; // 환산 점수 출력
+    cout.precision(2);
+    cout << "환산 점수 : " << fixed << c_score[a] << endl << endl; // 환산 점수 출력
 }
 
 int main(){
@@ -47,11 +49,12 @@ int main(){
             }
         }
         else if (work == 2){ // 2(전체 정보 출력)을 선택했다면
+            cout << "---------------------------------------" << endl;
             cout << "[전체 학생 정보 출력]" << endl;
             db.a = db.a + db.n; // a에 지금까지 입력된 명 수를 저장
 
             for (int a = 1;  a <= db.a; a++){ // 전체 수 만큼 반복문 실행
-                cout << a << "번쨰 학생 정보를 출력합니다." << endl;
+                cout << a << "번째 학생 정보를 출력합니다." << endl;
                 db.All(a); // 모든 정보 출력
             }
         }

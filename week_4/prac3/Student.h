@@ -10,7 +10,7 @@ public: // 접근 지정자
     string name[30]; // 이름 저장 배열
     string number[30]; // 학번 저장 배열
     int score[30]; // 점수 저장 배열
-    int c_score[30]; // 환산 점수 저장 배열
+    double c_score[30]; // 환산 점수 저장 배열
 
     void Name(int n);
     void Number(int n);
