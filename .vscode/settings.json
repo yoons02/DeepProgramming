@@ -6,6 +6,7 @@
         "bitset": "cpp",
         "iostream": "cpp",
         "ios": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "string": "cpp"
     }
 }
