@@ -38,13 +38,14 @@ int main(){
     Sphere *circle[count]; // 포인터형 객체 배열 생성
     
     for (int i = 1; i <= count; i++){
-        circle[i] = new Sphere(i); // 동적할당
+        circle[i] = new Sphere(i); // 동적 할당
     }
     cout << endl;
     for (int i = 1; i <= count; i++){
         cout << "구 " << i << "의 반지름 >> ";
         cin >> radius; // 반지름 입력
-        // cout << circle[i] -> Volume(radius) << endl; // 객체 배열을 Volume함수에 접근시켰을 때 계산값이 잘 반환되는지 확인
+        // cout << circle[i] -> Volume(radius) << endl; 
+        // 객체 배열을 Volume함수에 접근시켰을 때 계산값이 잘 반환되는지 확인
         if (circle[i] -> Volume(radius) >= 765){ // 부피 반환값이 765보다 크면
             a++; // a를 1 증가시킨다
         }
