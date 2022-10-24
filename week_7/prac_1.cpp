@@ -12,7 +12,7 @@ void After(float* defaultV){ // 항구 진입 후 선박 속도 계산 함수
 }
 
 int main(){
-    float defaultV = 17000; // 기본 속도는 17,000
+    float defaultV = 17000; // 기본 속도는
 
     Before(&defaultV); // Before 함수에 default의 주소값 전달
     After(&defaultV); // After 함수에 default의 주소값 전달

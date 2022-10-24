@@ -26,7 +26,7 @@ Factory::Factory(const Factory& m){ // 객체 m을 매개변수로 하는 복사
     cout << this->name <<" 1대 생산!!" << endl; // 복사 생성자 실행 메세지 출력
 }
 
-Factory::~Factory(){ // 소멸자
+Factory::~Factory(){ // 소멸자ㄱ
     cout << "메모리 소멸" << endl; // 소멸자 실행 메세지
 }
 
