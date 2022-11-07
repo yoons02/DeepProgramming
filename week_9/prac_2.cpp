@@ -3,40 +3,40 @@
 using namespace std;
 
 class Car{
-private:
-    int carNum;
-    string carName;
-    int checkNum;
 public:
-    static void print(int num, string name, int check){
-        
-        cout << endl << "차량 번호 : " << num << endl;
-        cout << "차량 이름 : " << name << endl;
-        cout << "표시 : " << check << endl << endl;
-    }
+    static int carNum;
+    static string carName;
+    static int checkNum;   
+
+    Car();
+    static void copy(int num, string name, int check);
 };
 
+Car::Car(){
+    cout << "객체가 생성되었습니다." << endl;
+}
+
+void Car::copy(int num, string name, int check){
+    carNum = num;
+    carName = name;
+    checkNum = check;
+}
+
 int main(){
-    int n;
-    int num;
-    string name;
-    int check;
+    Car car1;
 
-    cout << "차량 몇 대를 입력할까요? : ";
-    cin >> n;
+    cout << "차량 번호 입력 : ";
+    cin >> Car::carNum;
 
-    for (int i = 0; i < n; i++){
-        cin.ignore();
-        cout << "차량 번호 입력 : ";
-        cin >> num;
+    cout << "차량 이름 입력 : ";
+    cin >> Car::carName;
 
-        cout << "차량 이름 입력 : ";
-        cin >> name;
+    cout << "표시 (1-10) : ";
+    cin >> Car::checkNum;
 
-        cout << "표시 (1-10) : ";
-        cin >> check;
+    Car::copy(Car::carNum, Car::carName, Car::checkNum);
 
-        Car::print(num, name, check);
-    }
-
+    cout << endl << "차량 번호 : " << Car::carNum << endl;
+    cout << "차량 이름 : " << Car::carName << endl;
+    cout << "표시 : " << Car::checkNum << endl << endl;
 }
