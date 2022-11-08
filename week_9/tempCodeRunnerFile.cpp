@@ -1,1 +1,1 @@
-    // static void print(int num, string name, int check);
+    // Car::copy(Car::carNum, Car::carName, Car::checkNum); // 입력 값을 정적 함수 copy의 매개변수로 전달

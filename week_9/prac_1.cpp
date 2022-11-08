@@ -21,13 +21,13 @@ measure::measure(int radius){ // 원의 면적을 구하는 생성자
     cout << "원의 면적은 " << 3.14*(this->radius)*(this->radius) << endl; // 3.14*pi*반지름^2
 }
 
-measure::measure(int width, int height){ // 직사각형, 정사각형의 면적을 구하는 생성자
+measure::measure(int width, int height){ // 직사각형, 정사각형의 면적을 구하는 생성자 2
     this -> width = width; // 매개변수 값을 멤버 변수에 저장
     this -> height = height;
     cout << "사각형의 면적은 " << (this->width)*(this->height) << endl; // 가로길이*세로길이
 }
 
-measure::measure(double width, int height){ // 삼각형의 면적을 구하는 생성자
+measure::measure(double width, int height){ // 삼각형의 면적을 구하는 생성자 
     this -> width = width; // 매개변수 값을 멤버 변수에 저장
     this -> height = height;
     cout << "삼각형의 면적은 " << (this->width)*(this->height)/2 << endl; // 사각형 면적/2

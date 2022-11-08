@@ -2,41 +2,37 @@
 #include <string>
 using namespace std;
 
-class Car{
-public:
-    static int carNum;
-    static string carName;
-    static int checkNum;   
+class Car{ // Car class 생성
+public: // public 접근 지정자
+    static int carNum; // carNum int형 정적 변수
+    static string carName; // carName string형 정적변수
+    static int checkNum; // checkNum int형 정적변수
 
-    Car();
-    static void copy(int num, string name, int check);
+    Car(); // 기본 생성자
 };
 
-Car::Car(){
-    cout << "객체가 생성되었습니다." << endl;
+Car::Car(){ // Car 기본 생성자 구현
+    cout << "객체가 생성되었습니다." << endl; // 출력 메세지
 }
 
-void Car::copy(int num, string name, int check){
-    carNum = num;
-    carName = name;
-    checkNum = check;
-}
+// 정적변수 초기화
+int Car::carNum = 1;
+string Car::carName = "None";
+int Car::checkNum = 1;  
 
 int main(){
-    Car car1;
+    Car car1; // car1 객체 생성
 
     cout << "차량 번호 입력 : ";
-    cin >> Car::carNum;
+    cin >> Car::carNum; // 차량 번호 입력 후 정적 변수 carNum에 저장
 
     cout << "차량 이름 입력 : ";
-    cin >> Car::carName;
+    cin >> Car::carName; // 차량 이름 입력 후 정적 변수 carName에 저장
 
     cout << "표시 (1-10) : ";
-    cin >> Car::checkNum;
+    cin >> Car::checkNum; // 표시 번호 입력 후 정적 변수 checkNum에 저장
 
-    Car::copy(Car::carNum, Car::carName, Car::checkNum);
-
-    cout << endl << "차량 번호 : " << Car::carNum << endl;
-    cout << "차량 이름 : " << Car::carName << endl;
-    cout << "표시 : " << Car::checkNum << endl << endl;
+    cout << endl << "차량 번호 : " << Car::carNum << endl; // 차량 번호 출력
+    cout << "차량 이름 : " << Car::carName << endl; // 차량 이름 출력
+    cout << "표시 : " << Car::checkNum << endl << endl; // 표시 번호 출력
 }
