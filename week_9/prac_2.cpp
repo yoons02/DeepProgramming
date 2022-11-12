@@ -16,7 +16,7 @@ Car::Car(){ // Car 기본 생성자 구현
 }
 
 // 정적변수 초기화
-int Car::carNum = 1;
+int Car::carNum = 0000;
 string Car::carName = "None";
 int Car::checkNum = 1;  
 

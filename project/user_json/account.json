@@ -1,0 +1,22 @@
+{
+    "app_name" : "yoon's delivery",
+    "user" :
+    [
+        {
+            "id" : 1,
+            "name" : "Kim yunseong",
+            "email" : "kys5037k@naver.com",
+            "password" : "deep1",
+            "point" : 300
+        },
+        {
+            "id" : 2,
+            "name" : "Yun seonglee",
+            "email" : "seonglee@dgu.ac.kr",
+            "password" : "deep2",
+            "point" : 500
+        }
+    ]
+}
+
+
