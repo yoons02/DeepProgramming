@@ -22,7 +22,7 @@ int main() {
                 cout << "  "; // 문자 시작 전 공백
             }
             for (int j = 1; j <= 2*i-1; j++){
-                trans(65 + i - 1 - (j - i > 0 ? j - i : -1 * (j - i))); // 아스키 코드값 계산
+                trans(65 + i - 1 - (j - i > 0 ? j - i : -1 * (j - i))); // 아스키 코드값 계산 
             }
             cout << endl;
         }
